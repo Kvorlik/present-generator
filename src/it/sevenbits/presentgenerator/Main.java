@@ -9,8 +9,8 @@ public class Main {
         PresentPartsMap map = new PresentPartsMap();
 
         Present present = new PresentBuilder()
-                .addPresentPart(map.getPresentPart("part-one"))
-                .addPresentPart(map.getPresentPart("some-rubbish"))
+                .addPresentPart(map.getPresentPart("https://youtube.com/watch?v="))
+                .addPresentPart(map.getPresentPart("insert-key-here"))
                 .build();
 
         System.out.println(present.open());
