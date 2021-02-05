@@ -9,8 +9,9 @@ public class Main {
         PresentPartsMap map = new PresentPartsMap();
 
         Present present = new PresentBuilder()
-                .addPresentPart(map.getPresentPart("https://youtube.com/watch?v="))
+                .addPresentPart(map.getPresentPart("https://drive.google.com/file/d/"))
                 .addPresentPart(map.getPresentPart("insert-key-here"))
+                .addPresentPart(map.getPresentPart("/view?usp=sharing"))
                 .build();
 
         System.out.println(present.open());
